@@ -1,0 +1,119 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+  }
+
+
+header {
+    background-color: rgb(186, 245, 255);
+    height: 165px;
+    width: 100%;
+    position: fixed;
+    margin:0;
+    padding: 0;
+    background: rgb(214, 247, 126);
+box-shadow: 0px 3px 7px 0px #999999, -707px 4px 113px -79px rgba(252, 255, 68, 0.514) inset;
+z-index: 1000;
+transition: all 0.5s;
+}
+
+header.scrolled {
+    display: none;
+    
+}
+
+.av-kim.scrolled {
+    display: none; 
+    
+}
+
+.nav.scrolled {
+    display: none;
+    
+}
+
+body {
+    width: 100%;
+    
+    padding: 0;
+    margin: 0;
+    font-family: 'comic neue', 'anton', sans-serif, Arial, Helvetica, sans-serif;
+    transition: all 0.5s;
+
+    
+}
+
+.main-view {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    
+}
+
+.header-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.header-content.scrolled {
+    display: none;
+}
+
+.logo-container {
+    margin-top: 2%;
+    margin-left: 2%;
+}
+
+.header-logo {
+    width: 80%;
+}
+
+.nav{
+    display: flex;
+    flex-direction: row;
+    margin-right: 5%;
+    margin-top: 3%;
+    transition: all 0.5s;
+
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    text-transform: uppercase;
+    font-size: larger;
+    font-weight: 700;
+}
+
+
+.hero-img-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    background: url('/images/parkliv.jpg') center/contain no-repeat; /* Use the image as a background */
+}
+
+.hero-text-container {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 80%; /* Adjust as needed */
+    max-width: 700px; /* Adjust as needed */
+    color: #000000; /* Set text color to contrast with the image */
+}
