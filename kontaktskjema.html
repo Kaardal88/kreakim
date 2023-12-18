@@ -6,6 +6,7 @@
     <title>Reserverte Knegg</title>
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/svevehode.css">
+    <link rel="stylesheet" href="/css/kontaktskjema.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Comic+Neue&family=Federant&family=Work+Sans:wght@400;700;900&display=swap" rel="stylesheet">
@@ -35,26 +36,24 @@
 
     <main class="main-view">
 
-        <div class="hero-img-container"></div>
-        <div class="hero-text-container">
-            <h2>"Å UTTRYKKE SEG KREATIVT BYR OFTE PÅ OVERRASKENDE OG RAR HUMOR!"</h2>
-        </div>
-        <div class="underline"></div>
-        <div class="logo-display">
-            <img src="/images/Asset 1.png">
-        </div>
-        <div class="underline"></div>
-        <br>
+        <div class="skjema-container">
+            <form action="mailto:kaardal88@gmail.com" method="post" enctype="text/plain">
+                <h3>Ta kontakt</h3>
+                Name:<br>
+                <input type="text" name="name"><br>
+                E-mail:<br>
+                <input type="text" name="mail"><br>
+                Comment:<br>
+                <input type="text" name="comment" size="50"><br><br>
+                <input type="submit" value="Send">
+                <input type="reset" value="Reset">
+                <!-- <input type="text" id="name" placeholder="Navn" required>
+                <input type="email" id="email" placeholder="Email" required>
+                <input type="text" id="phone" placeholder="Mob.nr">
+                <textarea id="message" rows="8" placeholder="Hva lurer du på?"></textarea>
+                <button type="submit">Send</button> -->
 
-        <h3 class="nytt-bilde-tekst">NYTT BILDE HVER UKE... (FORHÅPENTLIGVIS!)</h3>
-
-        <img class="svevehode" src="/images/Tooclose.png" alt="svevehode">
-
-        <div class="weekly-image-container">
-            <div class="weekly-image">
-                <img class="image-fit" src="/images/Doomscrollers.jpg">
-
-            </div>
+            </form>
         </div>
 
         <footer>
@@ -64,7 +63,7 @@
                 </div>
                 <div class="footer-content">
                     <a href="#">Om meg</a>
-                    <a href="/kontaktskjema.html">Kontakt</a>
+                    <a href="#">Kontakt</a>
                 </div>
 
                 <div class="footer-copyright">
@@ -72,14 +71,7 @@
                 </div>
             </div>
         </footer>
-
-        
-
-       
-
-        
-
-    </main>
+</main>
     
 
     <script src="/js/script.js"></script>

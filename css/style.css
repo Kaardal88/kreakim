@@ -5,6 +5,10 @@
     
   }
 
+  a {
+    text-decoration: none;
+    color: black;
+  }
 
 header {
     background-color: rgb(186, 245, 255);
@@ -45,10 +49,16 @@ body {
     
 }
 
+.active {
+    color: #6e6e6e;
+    text-decoration-line: underline overline;
+}
+
 .main-view {
     position: relative;
     width: 100%;
     height: 100vh;
+    padding-top: 165px;
     
 }
 
@@ -97,13 +107,17 @@ li {
     font-weight: 700;
 }
 
+li:hover {
+    text-decoration: underline overline;
+    cursor: pointer;
+}
 
 .hero-img-container {
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: row;
-    padding: 5px;
+    padding:0;
     background: url('/images/parkliv.jpg') center/contain no-repeat; /* Use the image as a background */
 }
 
@@ -117,3 +131,161 @@ li {
     max-width: 700px; /* Adjust as needed */
     color: #000000; /* Set text color to contrast with the image */
 }
+
+.logo-display{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.weekly-image-container{
+  display: flex;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+}
+
+
+
+.weekly-image{
+  object-fit: scale-down;
+  width: 100%;
+  box-shadow: -5px 1px 15px -3px;
+}
+
+.weekly-image:hover{
+  transform: scale(1.13);
+  transition: ease-in 300ms;
+}
+
+.image-fit {
+  object-fit: scale-down;
+}
+
+.nytt-bilde-tekst {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.underline{
+  border: 1px solid black;
+  width: 50%;
+  margin-left: 25%;
+}
+
+
+/*KUNSTVERKSIDEN STARTER HER*/
+
+
+  
+  .gallery {
+    /* margin: 0 auto; */
+    max-width: 1440px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(325px, 1fr));
+    grid-auto-rows: auto;
+    gap: 50px;
+    padding-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .image {
+    width: 100%;
+    display: block;
+    box-shadow: 3px 5px 20px -10px;
+    /* background-color: #eeeeee; */
+    position: relative;
+    /* overflow: hidden; */
+    margin: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    
+  }
+
+  .image-text-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+  }
+
+  .image-info-text{
+    padding: 10px;
+  }
+
+  .pris {
+    font-size: x-large;
+    }
+
+  .image-fit {
+    width: 100%;
+  }
+  
+  .image:hover {
+    transform: scale(1.1);
+  }
+  
+  .modal {
+    display: none;
+    position: fixed;
+    top: 155px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  
+  .modal-content {
+    max-width: 80%;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    
+  }
+  
+  .close {
+    color: white;
+    font-size: 50px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+  }
+
+  /*FOOTER*/
+
+  .footer-container{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    background-color: rgb(214, 247, 126);
+
+    margin-top: 20%;
+    margin-bottom: 0;
+  }
+
+  .footer-logo-container{
+    padding: 10px;
+  }
+
+  .footer-logo{
+    width: 8%;
+  }
+  
+  .footer-content a{
+    padding: 10px;
+    font-size: large;
+    font-style:italic;
+    font-weight: 700;
+    padding-bottom: 10px;
+  
+  }
+
+  .footer-copyright{
+    padding: 20px;
+  }
+  

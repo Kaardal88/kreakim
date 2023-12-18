@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserverte Knegg</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Comic+Neue&family=Federant&family=Work+Sans:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+
+<header>
+    <div class="header-content">
+        <div class="logo-container">
+        <a href="index.html">
+            <img class="header-logo" src="/images/Asset 1.png" alt="kreakim logo">
+        </a>
+        <p class="av-kim">av KIM-ANDRÉ KÅRDAL</p>
+        </div>
+
+        <div class="nav">
+            <ul>
+                <li><a href="/kunstverk.html" class="active">Kunstverk</a></li>
+                <li>Makkverk</li>
+                <li>Musikkverk</li>
+                <li>Om...</li>
+             </ul>
+        </div>
+    </div>
+</header>
+
+<body>
+
+    <main class="main-view">
+
+      <div class="gallery">
+        
+        <!-- Bilde 1 -->
+        <div class="image" onclick="openModal('skytmeg.jpg')">
+          <img class="image-fit" src="/images/skytmeg.jpg" alt="image1-1">
+          <h3 class="image-text-header">"Skyt Meg"      <span class="pris">350 kr</span></h3>
+          <p class="image-info-text">A4 eller A3 poster</p>
+        </div>
+    
+        <!-- Bilde 2 -->
+        <div class="image" onclick="openModal('Doomscrollers.jpg')">
+          <img class="image-fit" src="/images/Doomscrollers.jpg" alt="image1-1">
+          <h3 class="image-text-header">"Doomscrollers"      <span class="pris">350 kr</span></h3>
+          <p class="image-info-text">A4 eller A3 poster</p>
+        </div>
+
+        <!-- Bilde 3 -->
+        <div class="image" onclick="openModal('Doomscrollers.jpg')">
+          <img class="image-fit" src="/images/skytmeg-mug.jpg" alt="image1-1">
+          <h3 class="image-text-header">"Skyt Meg" KRUS      <span class="pris">350 kr</span></h3>
+          <p class="image-info-text">Kaffi/Te/Gløgg</p>
+        </div>
+
+         <!-- Bilde 4 -->
+         <div class="image" onclick="openModal('Doomscrollers.jpg')">
+          <img class="image-fit" src="/images/skytmeg-mug.jpg" alt="image1-1">
+          <h3 class="image-text-header">"Skyt Meg" KRUS      <span class="pris">350 kr</span></h3>
+          <p class="image-info-text">Kaffi/Te/Gløgg</p>
+        </div>
+
+        <!-- Modal -->
+        <div id="modal" class="modal" onclick="closeModal()">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img class="modal-content" id="modalImage" src="/images/skytmeg.jpg">
+            <span class="prev" onclick="changeImage(-1)">&#8249;</span>
+            <span class="next" onclick="changeImage(1)">&#8250;</span>
+        </div>
+
+       
+
+       
+
+      </div>
+
+      <footer>
+        <div class="footer-container">
+            <div class="footer-logo-container">
+                <img class="footer-logo" src="/images/Asset 1.png">
+            </div>
+            <div class="footer-content">
+                <a href="#">Om meg</a>
+                <a href="#">Kontakt</a>
+            </div>
+
+            <div class="footer-copyright">
+                Copyright © 2023 Reserverte Knegg
+            </div>
+        </div>
+    </footer>
+
+        
+        
+
+        
+
+    </main>
+
+   
+    
+    
+    <script src="/js/script.js"></script>
+    <script src="/js/kunstverk.js"></script>
+
+
+</body>
+</html>

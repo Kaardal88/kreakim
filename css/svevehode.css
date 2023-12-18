@@ -1,0 +1,37 @@
+.svevehode {
+    position: relative;
+    margin-top: 0;
+    margin-left: 70%;
+    width: 150px;
+    height: 150px;
+    opacity: 1;
+    
+  
+    animation: bevegelse 2s ease-in-out infinite;
+  }
+
+ 
+  
+  @keyframes bevegelse {
+    0% {
+      top: 0;
+      left: 0;
+    }
+    50% {
+      top: 10px;
+      left: 10px;
+    }
+    100% {
+      top: 0;
+      left: 0;
+    }
+  }
+
+  @media  (max-width:800px) {
+
+    .svevehode{
+        width: 75px;
+        height: 75px;
+    }
+    
+  } 
